@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["@codica/eslint-config-react-ts", "plugin:@next/next/recommended"],
+  "plugins": ["formatjs"],
+  "parserOptions": {
+    "tsconfigRootDir": ".",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true 
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "formatjs/no-offset": "off",
+    "formatjs/no-id": "off"
+  }
+}
